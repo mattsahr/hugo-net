@@ -1,5 +1,38 @@
+### JetBrains template
+
+*.iml
+.idea/
+*.ipr
+*.iws
+out/
+.idea_modules/
+atlassian-ide-plugin.xml
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+
+### VS Code
+.vscode
+
+### Node template
+
+logs
+*.log
+pids
+*.pid
+*.seed
+lib-cov
+coverage
+.grunt
+.lock-wscript
+build/Release
 node_modules/
-dist/
-site/data/webpack.json
+node_modules
 /npm-debug.log
 yarn-error.log
+
+dist/
+
+site/data/webpack.json
+site/babel/node_modules
+site/babel/package-lock.json
