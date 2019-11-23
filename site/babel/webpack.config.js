@@ -5,11 +5,11 @@ var config = {
     module: {
         rules: [
             {
-                test: /\.(sa|sc|c)ss$/, // test: /(\.scss|\.css)$/, 
+                test: /\.(sa|sc|c)ss$/, // test: /(\.scss|\.css)$/,
                 use: [
-                    { loader: 'style-loader' }, 
-                    { loader: "css-loader", options: { sourceMap: true } },
-                    { loader: "sass-loader", options: { sourceMap: true } }
+                    { loader: 'style-loader' },
+                    { loader: 'css-loader', options: { sourceMap: true } },
+                    { loader: 'sass-loader', options: { sourceMap: true } }
                 ]
             },
             {
@@ -27,7 +27,7 @@ var config = {
                 }
             }
         ],
-    },  
+    },
     output: {
         path: path.resolve(__dirname, '../static/js'),
         filename: 'main-editor.js'
@@ -41,20 +41,20 @@ var config = {
 };
 
 var galleryConfig = Object.assign({}, config, {
-    name: "gallery-app",
-    entry: "./app/gallery-app.js",
+    name: 'gallery-app',
+    entry: './app/gallery-app.js',
     output: {
-       path: path.resolve(__dirname, '../static/js'),
-       filename: "gallery-app.js"
+        path: path.resolve(__dirname, '../static/js'),
+        filename: 'gallery-app.js'
     },
 });
 
 var editConfig = Object.assign({}, config,{
-    name: "main-editor",
-    entry: "./app/gallery-editor.js",
+    name: 'main-editor',
+    entry: './app/gallery-editor.js',
     output: {
-       path: path.resolve(__dirname, '../static/js'),
-       filename: "gallery-editor.js"
+        path: path.resolve(__dirname, '../static/js'),
+        filename: 'gallery-editor.js'
     },
 });
 

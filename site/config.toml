@@ -1,7 +1,42 @@
-baseurl = "/"
+baseURL = "/"
 languageCode = "en-us"
-languageLang = "en"
-title = "Homepage"
+title = "Photos - Matt & Sarah Sahr"
+
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsUseClasses = true
+
+# Controls how many words are printed in the content summary on the docs homepage.
+# See https://gohugo.io/content-management/summaries/
+summaryLength = 30
+
+[[menu.main]]
+    name = "Dalat!"
+    url = "/vietnam-dalat/"
+    weight = 3
+
+
+[params]
+  google_analytics_id=""
+  homepage_button_link = '/gallery'
+  homepage_button_text = 'Photo Galleries'
+  homepage_intro = 'Yo Dawg, I hear you LIke Photoz'
+  homepage_image = ''
+
+  ## You can enable to add anchor links to header elements
+  # enable_anchor_link = true
+
+  [params.homepage_meta_tags]
+    meta_description = "Photos"
+    meta_og_title = "Photos!"
+    meta_og_type = "website"
+    meta_twitter_card = ""
+    meta_twitter_site = ""
+    meta_twitter_creator = ""
+
+  [params.logo]
+      mobile = ""
+      standard  = ""
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details: 

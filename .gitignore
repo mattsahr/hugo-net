@@ -36,6 +36,8 @@ dist/
 bin/hugo.exe
 bin/hugo-original.exe
 
+package-lock.json
+site/resources/_gen
 
 site/data/webpack.json
 site/babel/node_modules

@@ -1,0 +1,30 @@
+{{$currentNode := .}}
+<div class="sidebar-menu-underlay" id="sidebar-menu-underlay-1"></div>
+<div class="sidebar-menu" id="sidebar-menu-1">
+    <div class="sidebar-menu-inner">
+
+      <div id="edit-mode-ux">
+          <div id="edit-mode-asterisk-button">*</div>
+          <div id="edit-mode-input-wrap">
+              <input id="edit-mode-password" placeholder="password" />
+          </div>
+      </div>
+
+        <ul>
+            <li class="page-home">
+            <a href="/"><div class="link-title">Home</div></a>
+            </li>
+            {{ range (where .Site.RegularPages "Section" "gallery") sort .Site.RegularPages ".Weight" }}
+                <li class="{{ with .File }}{{ if eq .UniqueID $currentNode.File.UniqueID }}active{{ end }}{{ end }}">
+                
+                    <a href="{{ .Permalink }}">
+                        <div class="link-title">{{ .Params.title }}</div>
+                        {{- with .Params.subA }}<div class="link-subtitle">{{.}}</div>{{ end -}}
+                        {{- with .Params.subB }}<div class="link-subtitle">{{.}}</div>{{ end -}}
+                    </a>
+                
+                </li>
+            {{ end }}
+        </ul>
+    </div> <!-- sidebar-menu-inner -->
+</div>
