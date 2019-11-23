@@ -33,6 +33,10 @@ yarn-error.log
 
 dist/
 
+bin/hugo.exe
+bin/hugo-original.exe
+
+
 site/data/webpack.json
 site/babel/node_modules
 site/babel/package-lock.json
